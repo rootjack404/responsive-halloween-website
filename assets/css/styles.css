@@ -757,7 +757,7 @@ button{
 
 /*===============  BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 575px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -777,6 +777,13 @@ button{
     grid-template-columns: .8fr;
     justify-content: center;
   }
+  iframe{
+    overflow: hidden; 
+    min-height: 40rem; 
+    align-items: center; 
+    width: 25rem;
+    margin: 0 auto;
+  }
 }
 
 /* For medium devices */
@@ -793,6 +800,13 @@ button{
   }
   .newsletter__description{
     padding: 0 3rem;
+  }
+  iframe{
+    overflow: hidden; 
+    min-height: 30rem; 
+    align-items: center; 
+    width: 30rem;
+    margin: 0 auto;
   }
 }
 
@@ -858,10 +872,10 @@ button{
   }
 
   .discount__container{
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(1, max-content);
     justify-content: center;
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 0rem;
     padding: 3rem 0;
     border-radius: 3rem;
   }
@@ -886,6 +900,13 @@ button{
     right: initial;
     bottom: 0;
     left: 15%;
+  }
+  iframe{
+    overflow: hidden; 
+    min-height: 30rem; 
+    align-items: center; 
+    width: 30rem;
+    margin: 0 auto;
   }
 }
 
@@ -965,7 +986,7 @@ button{
   }
 
   .discount__container{
-    column-gap: 7rem;
+    column-gap: 0rem;
   }
 
   .new__content{
@@ -987,6 +1008,14 @@ button{
   .footer__copy{
     margin-top: 6rem;
   }
+  iframe{
+    overflow:hidden; 
+    min-height: 30rem; 
+    align-items: center; 
+    width: 50rem;
+    margin: 0 auto;
+  }
+  
 }
 
 @media screen and (min-width: 1200px){
@@ -1003,6 +1032,13 @@ button{
     width: 180px;
     top: 30%;
     left: -3%;
+  }
+  iframe{
+    overflow:hidden; 
+    min-height: 30rem; 
+    align-items: center; 
+    width: 50rem;
+    margin: 0 auto;
   }
 }
 
