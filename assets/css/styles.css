@@ -781,8 +781,9 @@ button{
     overflow: hidden; 
     min-height: 40rem; 
     align-items: center; 
-    width: 25rem;
+    width: auto;
     margin: 0 auto;
+    margin-top: 7.5rem;
   }
 }
 
@@ -807,6 +808,7 @@ button{
     align-items: center; 
     width: 30rem;
     margin: 0 auto;
+    margin-top: 5rem;
   }
 }
 
@@ -907,6 +909,7 @@ button{
     align-items: center; 
     width: 30rem;
     margin: 0 auto;
+    margin-top: 5rem;
   }
 }
 
