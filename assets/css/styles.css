@@ -488,6 +488,12 @@ button{
   gap: 1.5rem 2rem;
 }
 
+.category__container2{
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+}
+
 .category__data{
   text-align: center;
 }
