@@ -1,5 +1,83 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+       url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Extralight.woff') format('woff'),
+       url('../fonts/ClashDisplay-Extralight.ttf') format('truetype');
+       font-weight: 200;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('../fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Light.woff') format('woff'),
+       url('../fonts/ClashDisplay-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Medium.woff') format('woff'),
+       url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Bold.woff') format('woff'),
+       url('../fonts/ClashDisplay-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -15,7 +93,7 @@
 
   /*Green gradient*/
   --body-color: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
-  --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
+  --container-color: 	hsl(223, 40%, 18%);
   
   /*Red gradient*/
   /* --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
@@ -26,7 +104,7 @@
   --container-color: hsl(30, 8%, 10%); */
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'ClashDisplay-Variable', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -82,8 +160,14 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background: var(--body-color);
+  background: url('../img/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  /*background: var(--body-color);*/
   color: var(--text-color);
+}
+
+.upside {
+  transform: scaleX(-1);
 }
 
 h1,h2,h3,h4{
@@ -145,7 +229,7 @@ button{
 /*=============== HEADER ===============*/
 .header{
   width: 100%;
-  background: var(--body-color); 
+  /*background: var(--body-color);*/
   position: fixed;
   top: 0;
   left: 0;
@@ -163,12 +247,13 @@ button{
 .nav__logo{
   display: flex;
   align-items: center;
-  column-gap: .5rem;
   font-weight: var(--font-medium);
+  margin-top: 0.5%;
 }
 
 .nav__logo-img{
-  width: 1.25rem;
+  width: 7rem;
+  align-items: center;
 }
 
 .nav__link,
@@ -236,7 +321,7 @@ button{
 
 /* Change background header */
 .scroll-header{
-  background: var(--container-color);
+  /*background: var(--container-color);*/
 }
 
 /* Active link */
@@ -267,7 +352,7 @@ button{
 }
 
 .home__img{
-  height: 250px;
+  height: 500px;
   justify-self: center;
 }
 
@@ -305,6 +390,7 @@ button{
 
 .home__subtitle{
   font-size: var(--h3-font-size);
+  font-family: 'ClashDisplay-Extralight';
   text-transform: uppercase;
   margin-bottom: var(--mb-1);
 }
@@ -312,6 +398,7 @@ button{
 .home__title{
   font-size: var(--biggest-font-size);
   font-weight: var(--font-black);
+  font-style: italic;
   line-height: 109%;
   margin-bottom: var(--mb-1);
 }
@@ -357,6 +444,7 @@ button{
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .3s;
+  text-align: center;
 }
 
 .button:hover{
@@ -493,7 +581,7 @@ button{
 
 /*=============== DISCOUNT ===============*/
 .discount__container{
-  background: var(--container-color);
+  background: transparent;
   border-radius: 1rem;
   padding: 2.5rem 0 1.5rem;
   row-gap: .75rem;
@@ -764,7 +852,7 @@ button{
   }
 
   .home__img{
-    height: 200px;
+    height: 350px;
   }
   .home__buttons{
     flex-direction: column;
@@ -844,7 +932,7 @@ button{
     gap: 4rem;
   }
   .home__img{
-    height: 300px;
+    height: 400px;
   }
   .swiper-pagination{
     margin-top: var(--mb-2);
@@ -877,10 +965,12 @@ button{
     grid-template-columns: repeat(1, max-content);
     justify-content: center;
     align-items: center;
+    text-align: center;
     column-gap: 0rem;
     padding: 3rem 0;
     border-radius: 3rem;
   }
+
   .discount__img{
     width: 350px;
     order: -1;
@@ -933,7 +1023,7 @@ button{
     padding-top: 0;
   }
   .home__img{
-    height: 400px;
+    height: 500px;
     transform: translateY(-3rem);
   }
   .home__indicator{
@@ -969,7 +1059,7 @@ button{
     column-gap: 7rem;
   }
   .about__img{
-    width: 350px;
+    width: 450px;
   }
   .about__description{
     padding-right: 2rem;
@@ -1023,7 +1113,7 @@ button{
 
 @media screen and (min-width: 1200px){
   .home__img{
-    height: 420px;
+    height: 550px;
   }
   .swiper-pagination{
     margin-top: var(--mb-2-5);
