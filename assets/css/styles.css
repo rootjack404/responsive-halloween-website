@@ -207,8 +207,13 @@ button{
 
 .section__title{
   font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
   text-align: center;
+}
+
+.section__subtitle{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-2);
+  color: var(--text-color-light);
 }
 
 /*=============== LAYOUT ===============*/
@@ -478,8 +483,9 @@ button{
 
 /*=============== CATEGORY ===============*/
 .category__container{
+  margin-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem;
+  gap: 1.5rem 2rem;
 }
 
 .category__data{
@@ -640,7 +646,7 @@ button{
 
 .new__subtitle{
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   margin-bottom: var(--mb-0-5);
 }
 
@@ -1012,7 +1018,6 @@ button{
 
   .section__title{
     font-size: var(--h1-font-size);
-    margin-bottom: 3rem;
   }
 
   .home__content{
