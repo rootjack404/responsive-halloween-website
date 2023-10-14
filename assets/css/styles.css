@@ -357,7 +357,31 @@ button{
 }
 
 .home__img{
-  height: 500px;
+  height: 200px;
+  justify-self: center;
+}
+
+.home__lgroup {
+  margin-top: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem 1rem;
+}
+
+.home__llgroup {
+  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1rem;
+}
+
+.home__logo {
+  max-height: 100px;
+  max-width: 200px;
+  justify-self: center;
+}
+
+.home__logo2 {
+  max-height: 200px;
+  max-width: 300px;
   justify-self: center;
 }
 
@@ -873,7 +897,10 @@ button{
   }
 
   .category__container,
-  .trick__container{
+  .category__container2,
+  .trick__container,
+  .home__lgroup,
+  .home__llgroup{
     grid-template-columns: .8fr;
     justify-content: center;
   }
@@ -950,8 +977,19 @@ button{
     margin-top: var(--mb-2);
   }
 
-  .category__container{
+  .category__container,
+  .home__lgroup{
     grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+  }
+
+  .home__llgroup{
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+  }
+
+  .category__container2 {
+    grid-template-columns: repeat(2, 200px);
     justify-content: center;
   }
 
@@ -1059,7 +1097,10 @@ button{
     padding-right: 2rem;
   }
 
-  .category__container{
+  .category__container,
+  .category__container2,
+  .home__lgroup,
+  .home__llgroup{
     column-gap: 8rem;
   }
   .category__img{
