@@ -362,13 +362,13 @@ button{
 }
 
 .home__lgroup {
-  margin-top: 3rem;
+  margin-top: 2rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem 1rem;
 }
 
 .home__llgroup {
-  margin-top: 3rem;
+  margin-top: 2rem;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem 1rem;
 }
