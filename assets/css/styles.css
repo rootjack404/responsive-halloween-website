@@ -368,7 +368,7 @@ button{
 }
 
 .home__llgroup {
-  margin-top: 3rem;
+  margin-top: 2rem;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem 1rem;
 }
@@ -516,6 +516,11 @@ button{
   margin-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 2rem;
+}
+
+.category__container3{
+  margin-top: 2rem;
+  justify-content: center;
 }
 
 .category__data{
@@ -990,6 +995,10 @@ button{
 
   .category__container2 {
     grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+  }
+
+  .category__container3 {
     justify-content: center;
   }
 
