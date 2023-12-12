@@ -1,73 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
 @font-face {
-  font-family: 'ClashDisplay-Variable';
-  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Variable.woff') format('woff'),
-       url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
-       font-weight: 200 700;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Extralight';
-  src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Extralight.woff') format('woff'),
-       url('../fonts/ClashDisplay-Extralight.ttf') format('truetype');
-       font-weight: 200;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Light';
-  src: url('../fonts/ClashDisplay-Light.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Light.woff') format('woff'),
-       url('../fonts/ClashDisplay-Light.ttf') format('truetype');
-       font-weight: 300;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Regular';
-  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Regular.woff') format('woff'),
-       url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Medium';
-  src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Medium.woff') format('woff'),
-       url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Semibold';
-  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
-       url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
-       font-weight: 600;
-       font-display: swap;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Bold';
-  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
-       url('../fonts/ClashDisplay-Bold.woff') format('woff'),
-       url('../fonts/ClashDisplay-Bold.ttf') format('truetype');
-       font-weight: 700;
-       font-display: swap;
-       font-style: normal;
+  font-family: 'Windlass';
+  src: url('../fonts/Windlass.ttf')
 }
 
 @keyframes animatedBackground {
@@ -84,15 +19,15 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --hue: 148;
-  --first-color: hsl(var(--hue), 91%, 41%);
-  --first-color-alt: hsl(var(--hue), 91%, 50%);
+  --hue: 217;
+  --first-color: hsl(var(--hue), 77%, 41%);
+  --first-color-alt: hsl(var(--hue), 77%, 50%);
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
 
   /*Green gradient*/
-  --body-color: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
+  --body-color: linear-gradient(90deg, hsl(217, 77%, 38%) 0%, hsl(223, 40%, 18%) 100%);
   --container-color: 	hsl(223, 40%, 18%);
   
   /*Red gradient*/
@@ -104,7 +39,7 @@
   --container-color: hsl(30, 8%, 10%); */
 
   /*========== Font and typography ==========*/
-  --body-font: 'ClashDisplay-Variable', sans-serif;
+  --body-font: 'Windlass', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -160,9 +95,7 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background: url('../img/bg.png') no-repeat center center fixed;
-  background-size: cover;
-  /*background: var(--body-color);*/
+  background: var(--body-color);
   color: var(--text-color);
 }
 
@@ -419,9 +352,10 @@ button{
 
 .home__subtitle{
   font-size: var(--h3-font-size);
-  font-family: 'ClashDisplay-Extralight';
+  font-family: 'Windlass';
   text-transform: uppercase;
   margin-bottom: var(--mb-1);
+  text-align: center;
 }
 
 .home__title{
@@ -434,6 +368,7 @@ button{
 
 .home__description{
   margin-bottom: var(--mb-1);
+  text-align: center;
 }
 
 .home__buttons{
