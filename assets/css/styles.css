@@ -313,6 +313,7 @@ button{
 }
 
 .home__logo2 {
+  margin-top: 2rem;
   max-height: 200px;
   max-width: 300px;
   justify-self: center;
@@ -844,6 +845,11 @@ button{
     grid-template-columns: .8fr;
     justify-content: center;
   }
+
+  .home__llsingle{
+    justify-content: center;
+  }
+  
   iframe{
     overflow: hidden; 
     min-height: 40rem; 
